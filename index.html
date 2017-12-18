@@ -7,8 +7,9 @@
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="base.css">
 	<link rel="stylesheet" href="icon/iconfont.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
 </head>
-<body>
+<body id="xiaomi">
 	<!-- 头部开始 -->
 	<div class="head">
 		<div class="head-neikuan">
@@ -50,9 +51,137 @@
 			<span class="wenzi">服务</span>
 			<span class="wenzi">社区</span>
 		</div>
-		<div class="daohang-right"></div>
+		<div class="daohang-right">
+			<div class="daohang-sousuo">
+				<input type="text" placeholder="请输入搜索内容">
+			</div>
+			<div class="daohang-icon">
+				<input type="submit" class="iconfont" value="&#xe63b;">
+			</div>
+		</div>
 	</div>
 	<!-- 导航结束 -->
+	<!-- banner开始 -->
+	<div class="banner swiper-container" id="swiper1">
+		<div class="banner-img swiper-wrapper">
+			<!-- <a href=""> -->
+				<div class="swiper-slide"><img src="image/banner1.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="image/banner2.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="image/banner3.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="image/banner4.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="image/banner5.jpg" alt=""></div>
+		<!-- 	</a> -->
+		</div>
+		<div class="bannner-img-jiantou-left swiper-button-prev iconfont icon-fanhui">
+		    &lt;
+				<!-- <span class="iconfont icon-fanhui banner-wenzi-size"></span> -->
+		</div>
+		<div class="bannner-img-jiantou-right swiper-button-next iconfont icon-qianwang">
+		    &gt;
+				<!-- <span class="iconfont icon-qianwang banner-wenzi-size"></span> -->
+		</div>
+
+		<ul class="banner-nav">
+			<li>
+				<a href="">
+					<span>手机 电话卡</span>
+					<span class="banner-nav-you">&gt;</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="">
+					<span>笔记本</span>
+					<span class="banner-nav-you">&gt;</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="">
+					<span>电视 盒子</span>
+					<span class="banner-nav-you">&gt;</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="">
+					<span>路由器 智能硬件</span>
+					<span class="banner-nav-you">&gt;</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="">
+					<span>移动电源 电池 插线板</span>
+					<span class="banner-nav-you">&gt;</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="">
+					<span>耳机 音响</span>
+					<span class="banner-nav-you">&gt;</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="">
+					<span>保护套 贴膜</span>
+					<span class="banner-nav-you">&gt;</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="">
+					<span>线材 支架 存储卡</span>
+					<span class="banner-nav-you">&gt;</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="">
+					<span>箱包 服饰 鞋 眼镜</span>
+					<span class="banner-nav-you">&gt;</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="">
+					<span>米兔 生活周边</span>
+					<span class="banner-nav-you">&gt;</span>
+				</a>
+			</li>
+		</ul>
+		<!-- <div class="banner-lun">
+			<div class="dadian banner-dadian">
+	    					<div class="dian banner-dian">
+	    						<div class="yuan yuan2"></div>
+	    					</div>
+	    					<div class="dian banner-dian">
+	    						<a href="">
+	    							<div class="yuan yuan3"></div>
+	    						</a>
+	    					</div>
+	    					<div class="dian banner-dian">
+	    						<a href="">
+	    							<div class="yuan yuan3"></div>
+	    						</a>
+	    					</div>
+	    					<div class="dian banner-dian">
+	    						<a href="">
+	    							<div class="yuan yuan3"></div>
+	    						</a>
+	    					</div>
+	    					<div class="dian banner-dian">
+	    						<a href="">
+	    							<div class="yuan3"></div>
+	    						</a>
+	    					</div>
+	    				</div>
+		</div> -->
+		<div class="swiper-pagination banner-lunbodian"></div>
+	</div>
+	<!-- banner结束 -->
 	<!-- banner下列表开始 -->
 	<ul class="bannerList">
 		<li>
@@ -99,13 +228,18 @@
 			</div>
 		</li>
 		<li>
-			<img src="image/bianjiaoshuangshe.jpg" alt="">
+		    <a href="">
+		    	<img src="image/bianjiaoshuangshe.jpg" alt="">
+		    </a>
 		</li>
 		<li>
-			<img src="image/quanmianping.jpg" alt="">
+			<a href=""><img src="image/quanmianping.jpg" alt="">
+			</a>
 		</li>
 		<li>
-			<img src="image/luyouqi.jpg" alt="">
+			<a href="">
+				<img src="image/luyouqi.jpg" alt="">
+			</a>
 		</li>
 	</ul>
 	<!-- banner下列表结束 -->
@@ -123,7 +257,9 @@
 		<div class="danpin-bottom">
 			<div class="danpin-item">
 				<div class="danpin-img">
-					<img src="image/shoujimax2.png" alt="">
+				    <a href="">
+				    <img src="image/shoujimax2.png" alt="">
+				    </a>
 				</div>
 				<a href="" class="danpin-img1">小米Max2</a>
 				<span class="danpin-img2">大屏大电量，轻薄全金属</span>
@@ -132,7 +268,9 @@
 
 			<div class="danpin-item">
 				<div class="danpin-img">
-					<img src="image/shoujifense.png" alt="">
+					<a href="">
+						<img src="image/shoujifense.png" alt="">
+					</a>
 				</div>
 				<a href="" class="danpin-img1">红米Note 5A 高配版</a>
 				<span class="danpin-img2">1600万像素柔光自拍</span>
@@ -141,7 +279,9 @@
 
 			<div class="danpin-item">
 				<div class="danpin-img">
-					<img src="image/shoujiheise.png" alt="">
+					<a href="">
+						<img src="image/shoujiheise.png" alt="">
+					</a>
 				</div>
 				<a href="" class="danpin-img1">红米Note 4X</a>
 				<span class="danpin-img2">4100mAh超长续航，多彩金属</span>
@@ -150,7 +290,9 @@
 
 			<div class="danpin-item">
 				<div class="danpin-img">
-					<img src="image/yejingdianshi.png" alt="">
+					<a href="">
+						<img src="image/yejingdianshi.png" alt="">
+					</a>
 				</div>
 				<a href="" class="danpin-img1">小米电视4A 43英寸 标准版</a>
 				<span class="danpin-img2">全高清HDR 四核高性能处理器</span>
@@ -159,7 +301,9 @@
 
 			<div class="danpin-item item2">
 				<div class="danpin-img">
-					<img src="image/bijiben.png" alt="">
+					<a href="">
+						<img src="image/bijiben.png" alt="">
+					</a>
 				</div>
 				<a href="" class="danpin-img1">小米笔记本</a>
 				<span class="danpin-img2">更快更强，不止四天线</span>
@@ -183,13 +327,22 @@
 				</div>
 			</div>
 			<div class="jiadian-bottom">
-				<div class="jidian-left"><img src="image/mijiasaodi.jpg" alt=""></div>
+				<div class="jidian-left">
+					<a href="">
+						<img src="image/mijiasaodi.jpg" alt="">
+					</a>
+					
+				</div>
 				<ul class="jiadian-right">
 					<li class="jiadian-item">
 						<a href="" class="jiadian-item1"><img src="image/fengjingdianshi.jpg" alt=""></a>
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -197,6 +350,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -204,6 +361,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -211,6 +372,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -218,6 +383,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -225,6 +394,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -232,6 +405,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<!-- <li class="jiadian-item"></li> -->
@@ -288,6 +465,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -295,6 +476,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -302,6 +487,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -309,6 +498,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item zhineng-item1">
@@ -326,6 +519,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -333,6 +530,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -340,6 +541,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<!-- <li class="jiadian-item"></li> -->
@@ -392,6 +597,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -399,6 +608,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -406,6 +619,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -413,6 +630,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item zhineng-item1">
@@ -430,6 +651,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -437,6 +662,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -444,6 +673,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<!-- <li class="jiadian-item"></li> -->
@@ -496,6 +729,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -503,6 +740,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -510,6 +751,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -517,6 +762,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item zhineng-item1">
@@ -534,6 +783,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -541,6 +794,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -548,6 +805,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<!-- <li class="jiadian-item"></li> -->
@@ -600,6 +861,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -607,6 +872,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -614,6 +883,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -621,6 +894,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item zhineng-item1">
@@ -638,6 +915,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -645,6 +926,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<li class="jiadian-item">
@@ -652,6 +937,10 @@
 						<a href="" class="jiadian-item2">小米电视4 5.5英寸</a>
 						<p class="jiadian-item3">4.9mm极超薄高端旗舰电视</p>
 						<span class="jiadian-item4">4499元</span>
+						<div class="jiadian-tan">
+							<p>不回复我的妹子都不是好妹子</p>
+							<span>惊鸿客</span>
+						</div>
 					</li>
 
 					<!-- <li class="jiadian-item"></li> -->
@@ -686,7 +975,10 @@
 			<div class="tuijian-bottom">
 				<div class="tuijian-item">
 					<div class="tuijian-img">
-						<img src="image/heiseshouji.jpg" alt="">
+						<a href="">
+							<img src="image/heiseshouji.jpg" alt="">
+						</a>
+						
 					</div>
 					<a href="" class="tuijian-img1">小米Note3 全网通版 6GB内存</a>
 					<span class="tuijian-img2">2299元</span>
@@ -695,7 +987,10 @@
 
 				<div class="tuijian-item">
 					<div class="tuijian-img">
-						<img src="image/fenmishouji.png" alt="">
+						<a href="">
+							<img src="image/fenmishouji.png" alt="">
+						</a>
+						
 					</div>
 					<a href="" class="tuijian-img1">红米Note 5A 全网通版 3GB...</a>
 					<span class="tuijian-img2">899元</span>
@@ -704,7 +999,10 @@
 
 				<div class="tuijian-item">
 					<div class="tuijian-img">
-						<img src="image/pingban3.jpg" alt="">
+						<a href="">
+							<img src="image/pingban3.jpg" alt="">
+						</a>
+						
 					</div>
 					<a href="" class="tuijian-img1">小米平板3</a>
 					<span class="tuijian-img2">1499元</span>
@@ -713,7 +1011,10 @@
 
 				<div class="tuijian-item">
 					<div class="tuijian-img">
-						<img src="image/lanlvshouji.jpg" alt="">
+						<a href="">
+							<img src="image/lanlvshouji.jpg" alt="">
+						</a>
+						
 					</div>
 					<a href="" class="tuijian-img1">红米 5 Plus 标准钢化玻璃膜</a>
 					<span class="tuijian-img2">29元</span>
@@ -722,7 +1023,10 @@
 
 				<div class="tuijian-item tuijianitem5">
 					<div class="tuijian-img">
-						<img src="image/neicunka.png" alt="">
+						<a href="">
+							<img src="image/neicunka.png" alt="">
+						</a>
+						
 					</div>
 					<a href="" class="tuijian-img1">SanDisk 32GB存储卡</a>
 					<span class="tuijian-img2">89元</span>
@@ -738,7 +1042,36 @@
 	    	</div>
 	    	<div class="reping-bottom">
 	    		<div class="reping-item">
-	    			<div class="reping-item1"><img src="image/erjinvren.jpg" alt=""></div>
+	    			<div class="reping-item1">
+	    				<a href="">
+	    					<img src="image/erjinvren.jpg" alt="">
+	    				</a>
+	    				
+	    			</div>
+	    			<div class="reping-item2">
+	    				<p>很小巧 像不喜欢戴活塞的人可以试试这种~很舒服包装还是一如既往的简洁 要是有盒子就好了=￣ω￣=</p>
+	    			</div>
+	    			<div class="reping-item3">
+	    				<span>来自于 鹤唳 的评价</span>
+	    			</div>
+	    			<div class="reping-item4">
+	    				<a href="">
+	    					<span>小米胶囊耳机</span>
+	    				</a>
+	    				
+	    			</div>
+	    			<div class="reping-item5">
+	    				<span>69元</span>
+	    			</div>
+	    		</div>
+
+	    		<div class="reping-item">
+	    			<div class="reping-item1">
+	    				<a href="">
+	    					<img src="image/chaixanban.jpg" alt="">
+	    				</a>
+	    				
+	    			</div>
 	    			<div class="reping-item2">
 	    				<p>很小巧 像不喜欢戴活塞的人可以试试这种~很舒服包装还是一如既往的简洁 要是有盒子就好了=￣ω￣=</p>
 	    			</div>
@@ -754,23 +1087,12 @@
 	    		</div>
 
 	    		<div class="reping-item">
-	    			<div class="reping-item1"><img src="image/chaixanban.jpg" alt=""></div>
-	    			<div class="reping-item2">
-	    				<p>很小巧 像不喜欢戴活塞的人可以试试这种~很舒服包装还是一如既往的简洁 要是有盒子就好了=￣ω￣=</p>
+	    			<div class="reping-item1">
+	    				<a href="">
+	    					<img src="image/chezaikongqi.jpg" alt="">
+	    				</a>
+	    				
 	    			</div>
-	    			<div class="reping-item3">
-	    				<span>来自于 鹤唳 的评价</span>
-	    			</div>
-	    			<div class="reping-item4">
-	    				<span>小米胶囊耳机</span>
-	    			</div>
-	    			<div class="reping-item5">
-	    				<span>69元</span>
-	    			</div>
-	    		</div>
-
-	    		<div class="reping-item">
-	    			<div class="reping-item1"><img src="image/chezaikongqi.jpg" alt=""></div>
 	    			<div class="reping-item2">
 	    				<p>很小巧 像不喜欢戴活塞的人可以试试这种~很舒服包装还是一如既往的简洁 要是有盒子就好了=￣ω￣=</p>
 	    			</div>
@@ -786,7 +1108,12 @@
 	    		</div>
 
 	    		<div class="reping-item reping-item6">
-	    			<div class="reping-item1"><img src="image/sangejiashiqi.jpg" alt=""></div>
+	    			<div class="reping-item1">
+	    				<a href="">
+	    					<img src="image/sangejiashiqi.jpg" alt="">
+	    				</a>
+	    				
+	    			</div>
 	    			<div class="reping-item2">
 	    				<p>很小巧 像不喜欢戴活塞的人可以试试这种~很舒服包装还是一如既往的简洁 要是有盒子就好了=￣ω￣=</p>
 	    			</div>
@@ -807,22 +1134,100 @@
 	    <div class="neirong">
 	    	<div class="neirong-top">内容</div>
 	    	<div class="neirong-bottom">
+	    		<div class="neirong-item swiper-container" id="swiper2">
+	    			<div class="swiper-wrapper">
+	    			    <div class="swiper-slide">
+	    			    	<div class="neirong-item1">图书1</div>
+	    					<a href="">
+	    						<div class="neirong-item2">哈利·波特与被诅咒的孩子</div>
+	    						<div class="neirong-item3">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </div>
+	    					</a>
+	    					<div class="neirong-item4">29.37元</div>
+	    					<div class="neirong-item5">
+	    						<a href="">
+	    							<img src="image/halibote.png" alt="">
+	    						</a>
+	    			    	</div>
+	    				</div>
+
+	    				<div class="swiper-slide">
+	    			    	<div class="neirong-item1">图书</div>
+	    					<a href="">
+	    						<div class="neirong-item2">哈利·波特与被诅咒的孩子</div>
+	    						<div class="neirong-item3">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </div>
+	    					</a>
+	    					<div class="neirong-item4">29.37元</div>
+	    					<div class="neirong-item5">
+	    						<a href="">
+	    							<img src="image/halibote.png" alt="">
+	    						</a>
+	    			    	</div>
+	    				</div>
+
+	    				<div class="swiper-slide">
+	    			    	<div class="neirong-item1">图书</div>
+	    					<a href="">
+	    						<div class="neirong-item2">哈利·波特与被诅咒的孩子</div>
+	    						<div class="neirong-item3">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </div>
+	    					</a>
+	    					<div class="neirong-item4">29.37元</div>
+	    					<div class="neirong-item5">
+	    						<a href="">
+	    							<img src="image/halibote.png" alt="">
+	    						</a>
+	    			    	</div>
+	    				</div>
+	    			</div>
+
+	    			<div class="nr-left swiper-button-prev">&lt;</div>
+	    			<div class="nr-right swiper-button-next">&gt;</div>
+
+	    			<div class="neirong-item7 swiper-pagination">
+	    				<!-- <div class="dadian">
+	    					<div class="dian">
+	    						<div class="yuan yuan1"></div>
+	    					</div>
+	    					<div class="dian">
+	    						<a href="">
+	    							<div class="yuan"></div>
+	    						</a>
+	    					</div>
+	    					<div class="dian">
+	    						<a href="">
+	    							<div class="yuan"></div>
+	    						</a>
+	    					</div>
+	    				</div> -->
+	    			</div>
+	    		</div>
+
 	    		<div class="neirong-item">
 	    			<div class="neirong-item1">图书</div>
-	    			<div class="neirong-item2">哈利·波特与被诅咒的孩子</div>
+	    			<a href="">
+	    				<div class="neirong-item2">哈利·波特与被诅咒的孩子</div>
 	    			<div class="neirong-item3">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </div>
+	    			</a>
+	    			
 	    			<div class="neirong-item4">29.37元</div>
-	    			<div class="neirong-item5"><img src="image/halibote.png" alt=""></div>
+	    			<div class="neirong-item5">
+	    				<a href="">
+	    					<img src="image/halibote.png" alt="">
+	    				</a>
+	    			</div>
 	    			<div class="neirong-item7">
 	    				<div class="dadian">
 	    					<div class="dian">
 	    						<div class="yuan yuan1"></div>
 	    					</div>
 	    					<div class="dian">
-	    						<div class="yuan"></div>
+	    						<a href="">
+	    							<div class="yuan"></div>
+	    						</a>
 	    					</div>
 	    					<div class="dian">
-	    						<div class="yuan"></div>
+	    						<a href="">
+	    							<div class="yuan"></div>
+	    						</a>
 	    					</div>
 	    				</div>
 	    			</div>
@@ -830,41 +1235,31 @@
 
 	    		<div class="neirong-item">
 	    			<div class="neirong-item1">图书</div>
-	    			<div class="neirong-item2">哈利·波特与被诅咒的孩子</div>
+	    			<a href="">
+	    				<div class="neirong-item2">哈利·波特与被诅咒的孩子</div>
 	    			<div class="neirong-item3">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </div>
+	    			</a>
+	    			
 	    			<div class="neirong-item4">29.37元</div>
-	    			<div class="neirong-item5"></div>
-	    			<div class="neirong-item7">
-	    				<div class="dadian">
-	    					<div class="dian">
-	    						<div class="yuan yuan1"></div>
-	    					</div>
-	    					<div class="dian">
-	    						<div class="yuan"></div>
-	    					</div>
-	    					<div class="dian">
-	    						<div class="yuan"></div>
-	    					</div>
-	    				</div>
+	    			<div class="neirong-item5">
+	    				<a href="">
+	    					<img src="image/halibote.png" alt="">
+	    				</a>
 	    			</div>
-	    		</div>
-
-	    		<div class="neirong-item">
-	    			<div class="neirong-item1">图书</div>
-	    			<div class="neirong-item2">哈利·波特与被诅咒的孩子</div>
-	    			<div class="neirong-item3">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </div>
-	    			<div class="neirong-item4">29.37元</div>
-	    			<div class="neirong-item5"></div>
 	    			<div class="neirong-item7">
 	    				<div class="dadian">
 	    					<div class="dian">
 	    						<div class="yuan yuan1"></div>
 	    					</div>
 	    					<div class="dian">
-	    						<div class="yuan"></div>
+	    						<a href="">
+	    							<div class="yuan"></div>
+	    						</a>
 	    					</div>
 	    					<div class="dian">
-	    						<div class="yuan"></div>
+	    						<a href="">
+	    							<div class="yuan"></div>
+	    						</a>
 	    					</div>
 	    				</div>
 	    			</div>
@@ -872,20 +1267,31 @@
 
 	    		<div class="neirong-item neirong-item6">
 	    			<div class="neirong-item1">图书</div>
-	    			<div class="neirong-item2">哈利·波特与被诅咒的孩子</div>
+	    			<a href="">
+	    				<div class="neirong-item2">哈利·波特与被诅咒的孩子</div>
 	    			<div class="neirong-item3">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </div>
+	    			</a>
+	    			
 	    			<div class="neirong-item4">29.37元</div>
-	    			<div class="neirong-item5"></div>
+	    			<div class="neirong-item5">
+	    				<a href="">
+	    					<img src="image/halibote.png" alt="">
+	    				</a>
+	    			</div>
 	    			<div class="neirong-item7">
 	    				<div class="dadian">
 	    					<div class="dian">
 	    						<div class="yuan yuan1"></div>
 	    					</div>
 	    					<div class="dian">
-	    						<div class="yuan"></div>
+	    						<a href="">
+	    							<div class="yuan"></div>
+	    						</a>
 	    					</div>
 	    					<div class="dian">
-	    						<div class="yuan"></div>
+	    						<a href="">
+	    							<div class="yuan"></div>
+	    						</a>
 	    					</div>
 	    				</div>
 	    			</div>
@@ -895,29 +1301,63 @@
 	    <!-- 内容结束 -->
 	    <!-- 视频开始 -->
 	    <div class="shipin">
-	    	<div class="shipin-top">视频</div>
+	    	<div class="shipin-top">
+	    		<h1 class="tuijian-title">视频</h1>
+				<div class="shipin-right">
+					<span>查看全部</span>
+					<span class="iconfont icon-xiayiye1 head-buy"></span>
+				</div>
+	    	</div>
 	    	<div class="shipin-bottom">
 	    		<div class="shipin-item">
-	    			<div class="shipin-item1"><img src="image/leijun.jpg" alt=""></div>
-	    			<div class="shipin-item2">雷军与斯塔克打造全面屏2.0</div>
+	    			<div class="shipin-item1">
+	    				<a href="">
+	    					<img src="image/leijun.jpg" alt="">
+	    				</a>
+	    				
+	    			</div>
+	    			<a href="">
+	    				<div class="shipin-item2">雷军与斯塔克打造全面屏2.0</div>
+	    			</a>
 	    			<div class="shipin-item3">一场关于小米MIX 2极致工艺的巅峰对话</div>
 	    		</div>
 
 	    		<div class="shipin-item">
-	    			<div class="shipin-item1"><img src="image/leijun.jpg" alt=""></div>
-	    			<div class="shipin-item2">雷军与斯塔克打造全面屏2.0</div>
+	    			<div class="shipin-item1">
+	    				<a href="">
+	    					<img src="image/leijun.jpg" alt="">
+	    				</a>
+	    				
+	    			</div>
+	    			<a href="">
+	    				<div class="shipin-item2">雷军与斯塔克打造全面屏2.0</div>
+	    			</a>
 	    			<div class="shipin-item3">一场关于小米MIX 2极致工艺的巅峰对话</div>
 	    		</div>
 
 	    		<div class="shipin-item">
-	    			<div class="shipin-item1"><img src="image/leijun.jpg" alt=""></div>
-	    			<div class="shipin-item2">雷军与斯塔克打造全面屏2.0</div>
+	    			<div class="shipin-item1">
+	    				<a href="">
+	    					<img src="image/leijun.jpg" alt="">
+	    				</a>
+	    				
+	    			</div>
+	    			<a href="">
+	    				<div class="shipin-item2">雷军与斯塔克打造全面屏2.0</div>
+	    			</a>
 	    			<div class="shipin-item3">一场关于小米MIX 2极致工艺的巅峰对话</div>
 	    		</div>
 
 	    		<div class="shipin-item shipin-item4">
-	    			<div class="shipin-item1"><img src="image/leijun.jpg" alt=""></div>
-	    			<div class="shipin-item2">雷军与斯塔克打造全面屏2.0</div>
+	    			<div class="shipin-item1">
+	    				<a href="">
+	    					<img src="image/leijun.jpg" alt="">
+	    				</a>
+	    				
+	    			</div>
+	    			<a href="">
+	    				<div class="shipin-item2">雷军与斯塔克打造全面屏2.0</div>
+	    			</a>
 	    			<div class="shipin-item3">一场关于小米MIX 2极致工艺的巅峰对话</div>
 	    		</div>
 	    	</div>
@@ -926,6 +1366,201 @@
 
 	</div>
 	<!-- 灰盒子结束 -->
-	
+	<!-- 页脚开始 -->
+	<div class="foot">
+			<div class="foot-top">
+				<ul class="foot-top-item">
+					<li class="foot-top-item1">
+						<a href="" class="foot-top-item2">
+							<span class="iconfont icon-weixiu foot-weixiu"></span> 
+							<span class="foot-weixiuwenzi">预约维修服务</span>
+						</a>	
+						<!-- <a href="" class="foot-top-item2">预约维修服务6</a> -->
+					</li>
+
+					<li class="foot-top-item1">
+						<a href="" class="foot-top-item2">
+							<span class="iconfont icon-tianwuliyoutuihuo foot-weixiu "></span> 
+							<span class="foot-weixiuwenzi">7天无理由退货</span>
+						</a>	
+						<!-- <a href="" class="foot-top-item2">预约维修服务6</a> -->
+					</li>
+
+					<li class="foot-top-item1">
+						<a href="" class="foot-top-item2">
+							<span class="iconfont icon-15tianwuliyoutuihuo foot-weixiu"></span> 
+							<span class="foot-weixiuwenzi">15天免费换货</span>
+						</a>	
+						<!-- <a href="" class="foot-top-item2">预约维修服务6</a> -->
+					</li>
+
+					<li class="foot-top-item1">
+						<a href="" class="foot-top-item2">
+							<span class="iconfont icon-man150yuanbaoyou24px foot-weixiu"></span> 
+							<span class="foot-weixiuwenzi">满150元包邮</span>
+						</a>	
+						<!-- <a href="" class="foot-top-item2">预约维修服务6</a> -->
+					</li>
+
+					<li class="foot-top-item1">
+						<a href="" class="foot-top-item2">
+							<span class="iconfont icon-520jiashouhouwangdian24px foot-weixiu "></span> 
+							<span class="foot-weixiuwenzi">520余家售后网点</span>
+						</a>	
+						<!-- <a href="" class="foot-top-item2">预约维修服务6</a> -->
+					</li>
+				</ul>
+			</div>
+
+			<div class="foot-bottom">
+				<div class="foot-bottom-item">
+					<span class="foot-bottom-item1">帮助中心</span>
+					<a href="" class="foot-bottom-item2">账户管理</a>
+					<a href="" class="foot-bottom-item2">购物指南</a>
+					<a href="" class="foot-bottom-item2">订单操作</a>
+				</div>
+
+				<div class="foot-bottom-item">
+					<span class="foot-bottom-item1">帮助中心</span>
+					<a href="" class="foot-bottom-item2">账户管理</a>
+					<a href="" class="foot-bottom-item2">购物指南</a>
+					<a href="" class="foot-bottom-item2">订单操作</a>
+				</div>
+
+				<div class="foot-bottom-item">
+					<span class="foot-bottom-item1">帮助中心</span>
+					<a href="" class="foot-bottom-item2">账户管理</a>
+					<a href="" class="foot-bottom-item2">购物指南</a>
+					<a href="" class="foot-bottom-item2">订单操作</a>
+				</div>
+
+				<div class="foot-bottom-item">
+					<span class="foot-bottom-item1">帮助中心</span>
+					<a href="" class="foot-bottom-item2">账户管理</a>
+					<a href="" class="foot-bottom-item2">购物指南</a>
+					<a href="" class="foot-bottom-item2">订单操作</a>
+				</div>
+
+				<div class="foot-bottom-item">
+					<span class="foot-bottom-item1">帮助中心</span>
+					<a href="" class="foot-bottom-item2">账户管理</a>
+					<a href="" class="foot-bottom-item2">购物指南</a>
+					<a href="" class="foot-bottom-item2">订单操作</a>
+				</div>
+
+				<div class="foot-bottom-item">
+					<span class="foot-bottom-item1">帮助中心</span>
+					<a href="" class="foot-bottom-item2">账户管理</a>
+					<a href="" class="foot-bottom-item2">购物指南</a>
+					<a href="" class="foot-bottom-item2">订单操作</a>
+				</div>
+
+				<div class="foot-bottom-right">
+					<span class="foot-dianhua">400-100-5678</span>
+					<span class="foot-shijian">周一至周日 8:00-18:00</span>
+					<span class="foot-shihuafei">（仅收市话费）</span>
+					<a href="" class="foot-kefu">
+							<span class="iconfont icon-xinxi foot-bottom-xiaoxi"></span> 
+							<span class="foot-bottom-xiaoxi">24小时在线客服</span>
+						</a>	
+				</div>
+
+				
+			</div>
+		</div>
+
+		<div class="zuixiamian">
+			<div class="zuixiamian-neikuan">
+				<div class="zuixiamian-left">
+					<div class="left-logo">
+						<img src="img/mi-logo.touming.ico" alt="">
+					</div>
+					<div class="zuixiamian-yinsi">
+						<a href="" class="bottom-lianjietop">
+							<span class="bottom-lianjietop1">小米商城</span>
+							<span class="bottom-lianjietop1">MIUI</span>
+							<span class="bottom-lianjietop1">米家</span>
+							<span class="bottom-lianjietop1">米聊</span>
+							<span class="bottom-lianjietop1">多看</span>
+							<span class="bottom-lianjietop1">路由器</span>
+							<span class="bottom-lianjietop1">米粉卡</span>
+							<span class="bottom-lianjietop1">小米天猫店</span>
+							<span class="bottom-lianjietop1">隐私政策</span>
+							<span class="bottom-lianjietop1">问题反馈</span>
+							<span class="bottom-lianjietop1">Select Region</span>
+						</a>
+						<p class="beian">©mi.com 京ICP证110507号京ICP备10046444号京公网安备11010802020134号 京网文[2014]0059-0009号违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p>
+					</div>
+				</div>
+
+				<div class="zuixiamian-right">
+					<div class="tupian1">
+						<img src="img/foot.png1.png" alt="">
+					</div>
+
+					<div class="tupian1">
+						<img src="img/foot.png1.png" alt="">
+					</div>
+
+
+					<div class="tupian1">
+						<img src="img/foot.png1.png" alt="">
+					</div>
+
+
+					<div class="tupian1">
+						<img src="img/foot.png1.png" alt="">
+					</div>
+
+					
+					<div class="tupian1">
+						<img src="img/foot.png1.png" alt="">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	<!-- 页脚结束 -->
 </body>
 </html>
+<script src="js/jquery.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>        
+  var swiper1 = new Swiper ('#swiper1', {
+    loop: true,
+    autoplay:true,
+    effect : 'fade',
+    
+    // var声明变量
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+      clickable :true,
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })        
+  </script>
+  <script>        
+  var swiper2 = new Swiper ('#swiper2', {
+    loop: true,
+    // autoplay:true,
+    
+    // var声明变量
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+      clickable :true,
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })        
+  </script>
