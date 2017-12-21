@@ -98,6 +98,7 @@
 	border: 0;
 	box-sizing: border-box;
 	border: 1px solid #b0b0b0;
+	padding-left: 10px;
 }
 .daohang-icon{
 	width: 51px;
@@ -153,6 +154,10 @@
 	float: left;
 	box-sizing: content-box;
 	cursor: pointer;
+}
+.danpin-jiantou button:hover{
+	/* border: 1px solid orange; */
+	color: orange;
 }
 .danpin-bottom{
 	width: 100%;
@@ -299,6 +304,10 @@
 	float: left;
 	box-sizing: content-box;
 	cursor: pointer;
+}
+.tuijian-jiantou button:hover{
+	border: 1px solid orange;
+	color: orange;
 }
 .tuijian-bottom{
 	width: 100%;
@@ -623,6 +632,7 @@
 	margin-right: 14px;
 	border-top: 1px solid orange;
 	transition: all .2s linear;
+	position: relative;
 }
 .neirong .neirong-item:nth-child(4){
 	margin: 0;
@@ -642,6 +652,7 @@
 	background-image: none;
 	font-size: 18px;
 	line-height: 24px;
+	text-align: center;
 }
 .neirong .nr-right{
 	width: 20px;
@@ -655,10 +666,12 @@
 	background-image: none;
 	font-size: 18px;
 	line-height: 24px;
+	text-align: center;
 }
-.neirong .nr-left:hover;.neirong .nr-right:hover{
+.neirong-item:hover .nr-left,.neirong-item:hover .nr-right{
 	background-color: rgba(66,66,66,0.2)
 }
+
 .neirong-item1{
 	width: 276px;
 	height: 24px;
@@ -740,6 +753,16 @@
 	margin-top: 10px;
 	background-color: white
 }
+/* #xiaomi .neirong .swiper-pagination-bullet{
+	width: 6px;
+	height: 6px;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	background-color: red;
+} */
+/* #xiaomi .neirong .swiper-pagination-bullet .swiper-pagination-bullet-active{
+	border: 2px solid orange!important;
+    background-color: white;
+} */
 .shipin{
 	width: 1226px;
 	height: 343px;
@@ -772,6 +795,25 @@
 	height: 180px;
 	/* background-color: black; */
 	margin-bottom: 28px;
+	position: relative;
+}
+.shipin-bofang{
+	width: 32px;
+	height: 20px;
+	/* background-color: yellow; */
+	position: absolute;
+	left: 20px;
+	bottom: 10px;
+	text-align: center;
+	
+	line-height: 20px;
+}
+.shipin-item1 .dabofang{
+	font-size: 30px;
+	color: #fff;
+}
+.shipin-item1:hover .dabofang{
+	color: orange;
 }
 .shipin-item2{
 	width: 296px;
@@ -940,6 +982,9 @@
 	float: left;
 	color: #616161;
 }
+.foot-top-item2:hover span{
+	color: orange;
+}
 .foot-bottom{
 	width: 1226px;
 	height: 112px;
@@ -963,6 +1008,9 @@
 	display: block;
 	margin-top: 10px;
 } 
+.foot-bottom-item2:hover{
+	color: orange;
+}
 .foot-bottom-right{
 	width: 252px;
 	height: 112px;
@@ -1038,6 +1086,9 @@
 	font-size: 12px;
 	color: #757575;
 }
+.bottom-lianjietop1:hover{
+	color: orange;
+}
 .beian{
 	color: #b0b0b0;
 	font-size: 12px;
@@ -1056,6 +1107,7 @@
 	margin-top: 14.5px;
 	float: left;
 	margin-right: 10px;
+	cursor: pointer;
 }
 .banner .bannner-img-jiantou-left{
 	width: 41px;
